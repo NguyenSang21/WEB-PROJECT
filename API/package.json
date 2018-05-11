@@ -1,0 +1,21 @@
+{
+  "name": "nguoinoitieng",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.15.5",
+    "morgan": "~1.9.0",
+    "mustache": "^2.3.0",
+    "mysql": "^2.15.0",
+    "pg": "^7.4.1",
+    "serve-favicon": "~2.4.5"
+  }
+}
