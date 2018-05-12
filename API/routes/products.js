@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var product = require('../controllers/products.js');
 var type = require('../controllers/type.js');
-var person = require('../controllers/person.js');
+var user = require('../controllers/user.js');
 
     // Create a new Note
     router.post('/products', product.create);
@@ -14,7 +14,7 @@ var person = require('../controllers/person.js');
     //router.get('/celebrities/:celebritiesId', celebrities.findOne);
 
     // Update a Note with noteId
-    router.put('/products/:productId', product.update);
+    router.put('/products', product.update);
 
     // Delete a Note with noteId
     router.delete('/products/:productId', product.delete);
@@ -28,7 +28,7 @@ var person = require('../controllers/person.js');
     router.get('/type', type.findAll);
 
     // Update a Note with noteId
-    router.put('/type/:typeId', type.update);
+    router.put('/type', type.update);
 
     // Delete a Note with noteId
     router.delete('/type/:typeId', type.delete);
@@ -36,15 +36,15 @@ var person = require('../controllers/person.js');
 
 ///////////////////////////////////Người dùng////////////////////////////////
     // Create a new Note
-    router.post('/person', person.create);
+    router.post('/user', user.create);
 
     // Retrieve all products
-    router.get('/person', person.findAll);
+    router.get('/user', user.findAll);
 
     // Update a Note with noteId
-    router.put('/person/:personId', person.update);
+    router.put('/user', user.update);
 
     // Delete a Note with noteId
-    router.delete('/person/:personId', person.delete);
+    router.delete('/user/:userId', user.delete);
 
 module.exports = router;

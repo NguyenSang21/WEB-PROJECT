@@ -5,14 +5,14 @@ exports.findAll = function(callback){
 	});
 }
 exports.create = function (value ,callback) {
-	var query = "INSERT INTO may SET ?";
+	var query = "INSERT INTO loaimay SET ?";
 	db.executeParamsQuery(query, value, function (err, data){
         callback(err, data);
     });
 }
 
 exports.update = function (value, callback) {
-	var query = "update loaimay Set tenloai=? Where idloai = ? ";
+	var query = "update loaimay Set tenloai = ? Where idloai = ? ";
 	db.executeParamsQuery(query, [value.tenloai, value.idloai], function(err, data){
 		callback(err, data);
 	});
