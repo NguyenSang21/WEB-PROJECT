@@ -12,7 +12,8 @@ class App extends Component {
         super();
 
         this.state = {
-            modalIsOpen: false
+            modalIsOpen: false,
+            link: 1
         };
     }
 
@@ -24,6 +25,14 @@ class App extends Component {
     }
 
     render() {
+        if(this.state.link === 1)
+        {
+            var a = ProductList;
+        }
+        if(this.state.link === 2)
+        {
+            var a = Login;
+        }
         return (
             <Router>
             <div>
@@ -35,7 +44,7 @@ class App extends Component {
                <hr />
                
                <Switch>
-                  <Route exact path='/' component={ProductList} />
+                  <Route exact path='/' component={a} />
                   <Route exact path='/Login' component={Login} />
                </Switch>
             </div>

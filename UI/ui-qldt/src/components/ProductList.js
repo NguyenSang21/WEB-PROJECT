@@ -61,6 +61,14 @@ componentWillReceiveProps(nextProps){
             )
     }
 
+    handleClickEdit(){
+        alert("Edit");
+    }
+
+    handleClickDelete(){
+        alert("Delete");
+    }
+
     render() {
         const {error, isLoaded, items} = this.state;
         if (error) {
@@ -80,10 +88,10 @@ componentWillReceiveProps(nextProps){
                                         <p className="card-text">{item.tenMay}</p>
                                         <div className="d-flex justify-content-between align-items-center">
                                             <div className="btn-group">
-                                                <button type="button"
+                                                <button type="button" onClick={this.handleClickEdit}
                                                         className="btn btn-sm btn-outline-secondary">Edit
                                                 </button>
-                                                <button type="button"
+                                                <button type="button" onClick={this.handleClickDelete}
                                                         className="btn btn-sm btn-outline-secondary">Delete
                                                 </button>
                                             </div>

@@ -6,4 +6,6 @@ import ProductList from './components/ProductList';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
+
+
 registerServiceWorker();
