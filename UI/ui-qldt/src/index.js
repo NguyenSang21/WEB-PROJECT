@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import ProductList from './components/ProductList';
+import Main from './components/Main';
 import registerServiceWorker from './registerServiceWorker';
+import { BrowserRouter as Router, Route, IndexRoute } from 'react-router-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-
+ReactDOM.render(
+    <Router>
+        <Router path="/">
+            <Route component={Main}/>
+        </Router>
+    </Router>
+    , document.getElementById('root'));
 registerServiceWorker();
