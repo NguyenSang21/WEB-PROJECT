@@ -4,6 +4,15 @@ exports.findAll = function(callback){
 		callback(err,data);
 	});
 }
+
+exports.findOne = function(value, callback){
+	console.log(value);
+	var query = "select * from may where idM = ?";
+	db.executeParamsQuery(query, value, function(err,data){
+		callback(err,data);
+	});
+}
+
 exports.create = function (value ,callback) {
 	var query = "INSERT INTO may SET ?";
 	db.executeParamsQuery(query, value, function (err, data){

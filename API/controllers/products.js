@@ -27,10 +27,25 @@ exports.findAll = function (req, res) {
     );
 };
 
+exports.findOne = function (req, res) {
+    // Retrieve and return all notes from the database.
+    var id = req.params.productId;
+    console.log(id);
+    productModel.findOne(id, function (err, data) {
+        if (err) {
+            res.status(400).send(err);
+            return;
+        }
+        res.send(data);
+    }
+    );
+};
+
 
 exports.update = function (req, res) {
     // Update a note identified by the noteId in the request
     var id = req.params.productId;
+    console.log(id);
     var value = req.body;
     productModel.update(value, function(err, data){
             if(err) {

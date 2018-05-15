@@ -19,6 +19,10 @@ var user = require('../controllers/user.js');
     // Delete a Note with noteId
     router.delete('/products/:productId', product.delete);
 
+    // tìm kiếm 1 sản phẩm
+
+    router.get('/products/:productId', product.findOne);
+
 
 /////////////////////////////////////////Loại máy/////////////////////////
     // Create a new Note
