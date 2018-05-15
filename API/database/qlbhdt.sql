@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.5.2
+-- version 4.8.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th5 14, 2018 lúc 10:13 SA
--- Phiên bản máy phục vụ: 10.1.21-MariaDB
--- Phiên bản PHP: 5.6.30
+-- Thời gian đã tạo: Th5 15, 2018 lúc 07:23 PM
+-- Phiên bản máy phục vụ: 10.1.32-MariaDB
+-- Phiên bản PHP: 7.2.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -90,11 +92,11 @@ CREATE TABLE `may` (
 --
 
 INSERT INTO `may` (`idM`, `tenMay`, `NSX`, `ManHinh`, `HDH`, `CPU`, `RAM`, `CAMERA`, `PIN`, `Gia`, `ghiChu`, `slMatDinh`, `slHienTai`, `slXem`, `ngSX`, `Loai`, `Comment`, `MoTa`, `linkAnh`) VALUES
-(1, 'iPhone X 256GB', 'APPLE', ' 5.8\", Super Retina', ' iOS 11', ' Apple A11 Bionic 6 nhân', ' 3 GB, ROM: 256 GB', ' 2 camera 12 MP, Selfie: 7 MP', ' 2716 mAh', 34790000, ' Cơ hội trúng xe SH 150i (áp dụng khu vực Hà Nội).', 100, 100, 0, '2017-06-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn1.tgdd.vn/Products/Images/42/114111/iphone-x-256gb-a1-400x400.jpg'),
+(1, 'iPhone X 256GB', 'APPLE', ' 5.8\", Super Retina', ' iOS 11', ' Apple A11 Bionic 6 nhân', ' 3 GB, ROM: 256 GB', ' 2 camera 12 MP, Selfie: 7 MP', ' 2716 mAh', 34790000, ' Cơ hội trúng xe SH 150i (áp dụng khu vực Hà Nội).', 100, 100, 0, '2017-06-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn1.tgdd.vn/Products/Images/42/114111/iphone-x-256gb-a1-600x600.jpg'),
 (2, 'iPhone X 64GB', 'APPLE', ' 5.8\", Super Retina', ' iOS 11', ' Apple A11 Bionic 6 nhân', ' 3 GB, ROM: 64 GB', ' 2 camera 12 MP, Selfie: 7 MP', ' 2716 mAh', 29990000, ' Cơ hội trúng xe SH 150i (áp dụng khu vực Hà Nội).', 100, 100, 0, '2017-05-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600-400x400.jpg'),
 (3, 'iPhone 8 Plus 256GB', 'APPLE', ' 5.5\", Retina HD', ' iOS 11', ' Apple A11 Bionic 6 nhân', ' 3 GB, ROM: 256 GB', ' 2 camera 12 MP, Selfie: 7 MP', ' 2691 mAh', 28790000, ' Giảm ngay 1 triệu HOẶC Phiếu mua hàng trị giá 1 triệu Cơ hội trúng xe SH 150i (áp dụng khu vực Hà Nội). Giảm ngay 1.000.000đ khi thanh toán trực tuyến bằng thẻ Mastercard (KHÔNG áp dụng Trả góp)', 100, 100, 0, '2017-04-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn4.tgdd.vn/Products/Images/42/114114/iphone-8-plus-256gb-hh-400x400.jpg\r\n'),
 (4, 'iPhone 8 256GB', 'APPLE', ' 4.7\", Retina HD', ' iOS 11', ' Apple A11 Bionic 6 nhân', ' 2 GB, ROM: 256 GB', ' 12 MP, Selfie: 7 MP', ' 1821 mAh', 25790000, ' Giảm ngay 1 triệu HOẶC Phiếu mua hàng trị giá 1 triệu Cơ hội trúng xe SH 150i (áp dụng khu vực Hà Nội). Giảm ngay 1.000.000đ khi thanh toán trực tuyến bằng thẻ Mastercard (KHÔNG áp dụng Trả góp)', 100, 100, 0, '2017-03-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn2.tgdd.vn/Products/Images/42/114112/iphone-8-256gb-hh-400x400.jpg\r\n'),
-(5, 'iPhone 8 Plus 64GB', 'APPLE', ' 5.5\", Retina HD', ' iOS 11', ' Apple A11 Bionic 6 nhân', ' 3 GB, ROM: 64 GB', ' 2 camera 12 MP, Selfie: 7 MP', ' 2691 mAh', 23990000, ' Giảm ngay 1 triệu HOẶC Phiếu mua hàng trị giá 1 triệu Cơ hội trúng xe SH 150i (áp dụng khu vực Hà Nội). Giảm ngay 1.000.000đ khi thanh toán trực tuyến bằng thẻ Mastercard (KHÔNG áp dụng Trả góp)', 100, 100, 0, '2017-02-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn.tgdd.vn/Products/Images/42/114110/Feature/apple-iphone-8-plus-64gb-6.jpg\r\n'),
+(5, 'iPhone 8 Plus 64GB', 'APPLE', ' 5.5\", Retina HD', ' iOS 11', ' Apple A11 Bionic 6 nhân', ' 3 GB, ROM: 64 GB', ' 2 camera 12 MP, Selfie: 7 MP', ' 2691 mAh', 23990000, ' Giảm ngay 1 triệu HOẶC Phiếu mua hàng trị giá 1 triệu Cơ hội trúng xe SH 150i (áp dụng khu vực Hà Nội). Giảm ngay 1.000.000đ khi thanh toán trực tuyến bằng thẻ Mastercard (KHÔNG áp dụng Trả góp)', 100, 100, 0, '2017-02-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn.tgdd.vn/Products/Images/42/114110/iphone-8-plus-64gb-h1-400x460.png'),
 (6, 'iPhone 7 Plus 256GB', 'APPLE', ' 5.5\", Retina HD', ' iOS 10', ' Apple A10 Fusion 4 nhân', ' 3 GB, ROM: 256 GB', ' 2x12 MP, Selfie: 7 MP', ' 2900 mAh, SIM: 1 SIM', 21990000, ' Giảm ngay 1 triệu HOẶC Phiếu mua hàng trị giá 1 triệu Cơ hội trúng xe SH 150i (áp dụng khu vực Hà Nội).', 100, 100, 0, '2017-01-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn4.tgdd.vn/Products/Images/42/87839/iphone-7-plus-128gb-hh-400x400.jpg\r\n'),
 (7, 'iPhone 7 Plus 128GB', 'APPLE', ' 5.5\", Retina HD', ' iOS 10', ' Apple A10 Fusion 4 nhân', ' 3 GB, ROM: 128 GB', ' 2x12 MP, Selfie: 7 MP', ' 2900 mAh, SIM: 1 SIM', 22990000, ' Giảm ngay 1 triệu HOẶC Phiếu mua hàng trị giá 1 triệu Cơ hội trúng xe SH 150i (áp dụng khu vực Hà Nội).', 100, 100, 0, '2017-01-17', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn4.tgdd.vn/Products/Images/42/87839/iphone-7-plus-128gb-hh-400x400.jpg\r\n'),
 (8, 'iPhone 8 64GB', 'APPLE', ' 4.7\", Retina HD', ' iOS 11', ' Apple A11 Bionic 6 nhân', ' 2 GB, ROM: 64 GB', ' 12 MP, Selfie: 7 MP', ' 1821 mAh', 20990000, ' Giảm ngay 1 triệu HOẶC Phiếu mua hàng trị giá 1 triệu Cơ hội trúng xe SH 150i (áp dụng khu vực Hà Nội). Giảm ngay 1.000.000đ khi thanh toán trực tuyến bằng thẻ Mastercard (KHÔNG áp dụng Trả góp)', 100, 100, 0, '2016-07-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn3.tgdd.vn/Products/Images/42/114113/iphone-8-64gb-hh-400x400.jpg\r\n'),
@@ -107,7 +109,7 @@ INSERT INTO `may` (`idM`, `tenMay`, `NSX`, `ManHinh`, `HDH`, `CPU`, `RAM`, `CAME
 (15, 'iPhone 6s 32GB', 'APPLE', ' 4.7\", Retina HD', ' iOS 10', ' Apple A9 2 nhân', ' 2 GB, ROM: 32 GB', ' 12 MP, Selfie: 5 MP', ' 1715 mAh, SIM: 1 Sim', 12990000, ' Cơ hội trúng xe SH 150i (áp dụng khu vực Hà Nội).', 100, 100, 0, '2015-07-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn2.tgdd.vn/Products/Images/42/87842/iphone-6s-32gb-vang-dong-1-400x400.png\r\n'),
 (16, 'iPhone 6 32GB', 'APPLE', ' 4.7\", HD', ' iOS 10', ' Apple A8 2 nhân', ' 1 GB, ROM: 32 GB', ' 8 MP, Selfie: 1.2 MP', ' 1810 mAh', 8990000, ' Phiếu mua hàng trị giá 500.000đ Cơ hội trúng xe SH 150i (áp dụng khu vực Hà Nội).', 100, 100, 0, '2015-06-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn2.tgdd.vn/Products/Images/42/92962/iphone-6-32gb-gold-hh-400x400.jpg\r\n'),
 (17, 'iPhone 5S 16GB', 'APPLE', ' 4\", Retina', ' iOS 10', ' Apple A7 2 nhân', ' 1 GB, ROM: 16 GB', ' 8 MP, Selfie: 1.2 MP', ' 1560 mAh, SIM: 1 Sim', 5990000, ' Cơ hội trúng xe SH 150i (áp dụng khu vực Hà Nội).', 100, 100, 0, '2015-04-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn.tgdd.vn/Products/Images/42/57240/iPhone-5-l-190x190.jpg\r\n'),
-(18, 'Samsung Galaxy Note 8', 'SAMSUNG', ' 6.3\", Quad HD (2K)', ' Android 7.1', ' Exynos 8895 8 nhân', ' 6 GB, ROM: 64 GB', ' 2 camera 12 MP, Selfie: 8 MP', ' 3300 mAh', 22490000, ' Cơ hội trúng xe SH 150i (áp dụng Hà Nội và một số tỉnh miền Bắc). Phiếu mua hàng Samsung trị giá 150.000đ', 100, 100, 0, '2017-07-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn1.tgdd.vn/Products/Images/42/106211/Feature/samsung-galaxy-note8-0518-1.jpg\r\n'),
+(18, 'Samsung Galaxy Note 8', 'SAMSUNG', ' 6.3\", Quad HD (2K)', ' Android 7.1', ' Exynos 8895 8 nhân', ' 6 GB, ROM: 64 GB', ' 2 camera 12 MP, Selfie: 8 MP', ' 3300 mAh', 22490000, ' Cơ hội trúng xe SH 150i (áp dụng Hà Nội và một số tỉnh miền Bắc). Phiếu mua hàng Samsung trị giá 150.000đ', 100, 100, 0, '2017-07-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn.tgdd.vn/Products/Images/42/106211/samsung-galaxy-note8-1-400x460.png'),
 (19, 'Samsung Galaxy S8 Plus', 'SAMSUNG', ' 6.2, Quad HD (2K)', ' Android 7.0', ' Exynos 8895 8 nhân', ' 4 GB, ROM: 64 GB', ' 12 MP, Selfie: 8 MP', ' 3500 mAh', 20490000, ' Cơ hội trúng xe SH 150i (áp dụng Hà Nội và một số tỉnh miền Bắc). Bao da Clear View HOẶC Kính thực tế ảo Samsung Gear VR HOẶC Máy xay sinh tố Philips HR2108', 100, 100, 0, '2017-06-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn1.tgdd.vn/Products/Images/42/91131/samsung-galaxy-s8-plus-hh-600x600-200x200.jpg\r\n'),
 (20, 'Samsung Galaxy S8', 'SAMSUNG', ' 5.8\", Quad HD (2K)', ' Android 7.0', ' Exynos 8895 8 nhân', ' 4 GB, ROM: 64 GB', ' 12 MP, Selfie: 8 MP', ' 3000 mAh', 18490000, ' Cơ hội trúng xe SH 150i (áp dụng Hà Nội và một số tỉnh miền Bắc). Bao da Clear View HOẶC Kính thực tế ảo Samsung Gear VR HOẶC Máy xay sinh tố Philips HR2108', 100, 100, 0, '2017-05-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn4.tgdd.vn/Products/Images/42/78479/samsung-galaxy-s8-4-300x300.jpg\r\n'),
 (21, 'Samsung Galaxy Note FE', 'SAMSUNG', ' 5.7\", Quad HD (2K)', ' Android 7.0', ' Exynos 8890 8 nhân 64-bit', ' 4 GB, ROM: 64 GB', ' 12 MP, Selfie: 5 MP', ' 3200 mAh', 13990000, ' Cơ hội trúng xe SH 150i (áp dụng Hà Nội và một số tỉnh miền Bắc). Phiếu mua hàng Samsung trị giá 400.000đ', 100, 100, 0, '2017-04-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn4.tgdd.vn/Products/Images/42/103244/samsung-galaxy-note-fe-ha1-200x200.jpg\r\n'),
@@ -117,7 +119,7 @@ INSERT INTO `may` (`idM`, `tenMay`, `NSX`, `ManHinh`, `HDH`, `CPU`, `RAM`, `CAME
 (25, 'Samsung Galaxy A5 (2017)', 'SAMSUNG', ' 5.2\", Full HD', ' Android 6.0 (Marshmallow)', ' Exynos 7880', ' 3 GB, ROM: 32 GB', ' 16 MP, Selfie: 16 MP', ' 3000 mAh, SIM: 2 SIM', 7990000, ' Cơ hội trúng xe SH 150i (áp dụng Hà Nội và một số tỉnh miền Bắc). Phiếu mua hàng Samsung trị giá 100.000đ khi mua Online', 100, 100, 0, '2016-07-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn3.tgdd.vn/Products/Images/42/88268/samsung-galaxy-a5-2017-200x200.jpg\r\n'),
 (26, 'Samsung Galaxy J7 Pro', 'SAMSUNG', ' 5.5\", Full HD', ' Android 7.0', ' Exynos, 8 nhân', ' 3 GB, ROM: 32 GB', ' 13 MP, Selfie: 13 MP', ' 3600mAh', 6990000, '0', 100, 100, 0, '2016-05-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn4.tgdd.vn/Products/Images/42/103404/samsung-galaxy-j7-pro-hh-200x200.jpg\r\n'),
 (27, 'Samsung Galaxy J7 Prime', 'SAMSUNG', ' 5.5\", Full HD', ' Android 6.0 (Marshmallow)', ' Exynos 7870 8 nhân', ' 3 GB, ROM: 32 GB', ' 13 MP, Selfie: 8 MP', ' 3300 mAh, SIM: 2 SIM', 5490000, '0', 100, 100, 0, '2016-03-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn3.tgdd.vn/Products/Images/42/84798/samsung-galaxy-j7-prime-hh-200x200.jpg\r\n'),
-(28, 'Samsung Galaxy J3 Pro', 'SAMSUNG', ' 5\", HD', ' Android 7.0', ' Exynos 7570 4 nhân 64-bit', ' 2 GB, ROM: 16 GB', ' 13 MP, Selfie: 5 MP', ' 2400 mAh', 4490000, '0', 100, 100, 0, '2016-01-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn4.tgdd.vn/Products/Images/42/77849/Feature/samsung-galaxy-j3-pro-2017-0518-720.jpg\r\n'),
+(28, 'Samsung Galaxy J3 Pro', 'SAMSUNG', ' 5\", HD', ' Android 7.0', ' Exynos 7570 4 nhân 64-bit', ' 2 GB, ROM: 16 GB', ' 13 MP, Selfie: 5 MP', ' 2400 mAh', 4490000, '0', 100, 100, 0, '2016-01-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn.tgdd.vn/Products/Images/42/77849/samsung-galaxy-j3-2017-2-400x460.png'),
 (29, 'Samsung Galaxy J3 LTE', 'SAMSUNG', ' 5\", HD', ' Android 5.1 (Lollipop)', ' Spreadtrum SC7731 4 nhân', ' 1.5 GB, ROM: 8 GB', ' 8 MP, Selfie: 5 MP', ' 2600 mAh, SIM: 2 SIM', 2990000, '0', 100, 100, 0, '2015-05-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn2.tgdd.vn/Products/Images/42/84667/samsung-galaxy-j3-lte-mau-vang-up-1-1-1-200x200.jpg\r\n'),
 (30, 'Samsung Galaxy J2 Prime', 'SAMSUNG', ' 5\", qHD', ' Android 6.0 (Marshmallow)', ' MT6737 4 nhân', ' 1.5 GB, ROM: 8 GB', ' 8 MP, Selfie: 5 MP', ' 2600 mAh, SIM: 2 SIM', 2690000, ' Cơ hội trúng xe SH 150i (áp dụng Hà Nội và một số tỉnh miền Bắc). Phiếu mua hàng Samsung trị giá 100.000đ khi mua Online', 100, 100, 0, '2015-01-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn3.tgdd.vn/Products/Images/42/88573/samsung-galaxy-j2-prime-hh-200x200.jpg\r\n'),
 (31, 'Samsung E1200', 'SAMSUNG', 'Màn hình QCIF, 1.5 inch', 'Danh b?: 1000 s?, 1 SIM', 'Bàn phím cao su ch?ng b?i', 'H? tr? ch?c nang dèn pin', 'Dung lu?ng pin: 800 mAh', ' 2600 mAh, SIM: 2 SIM', 350, '0', 100, 100, 0, '2014-07-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn2.tgdd.vn/Products/Images/42/56352/samsung-e1200-hh-600x600.jpg\r\n'),
@@ -132,7 +134,14 @@ INSERT INTO `may` (`idM`, `tenMay`, `NSX`, `ManHinh`, `HDH`, `CPU`, `RAM`, `CAME
 (40, 'Samsung Galaxy Book 10.6 inch', 'SAMSUNG', ' 10.6\", TFT', ' Android 6.0 (Marshmallow)', ' Intel Core M3, Windows 10', ' 4 GB, B? nh?: 128 GB', ' Không, Selfie 5 MP', ' 30.4 Wh, SIM: Không', 19990000, ' Cơ hội trúng xe SH 150i (áp dụng Hà Nội và một số tỉnh miền Bắc). Phiếu mua hàng Samsung trị giá 2 triệu', 100, 100, 0, '2017-07-27', 2, 'Không có Cmt', 'Không có mô tả', 'https://cdn3.tgdd.vn/Products/Images/522/163793/ipad-6th-wifi-cellular-32g-2-200x200.jpg\r\n'),
 (41, 'Samsung Galaxy Tab A 8.0 (2017)', 'SAMSUNG', ' 8.0\", PLS', ' Android 7.0', ' Snapdragon 425, Android 7.0', ' 2 GB, B? nh?: 16 GB', ' 8 MP, Selfie 5 MP', ' 5000 mAh, SIM: 1 SIM', 6490000, ' Phiếu mua hàng Samsung trị giá 100.000đ Cơ hội trúng xe SH 150i (áp dụng Hà Nội và một số tỉnh miền Bắc).', 100, 100, 0, '2017-06-27', 2, 'Không có Cmt', 'Không có mô tả', 'https://cdn3.tgdd.vn/Products/Images/522/163813/ipad-6th-wifi-cellular-128gb-2-200x200.jpg\r\n'),
 (42, 'Samsung Galaxy Tab E 9.6 (SM-T561)', 'SAMSUNG', ' 9.6\", WXGA TFT', ' Android 6.0 (Marshmallow)', ' Spreadtrum, Android 4.4', ' 1.5 GB, B? nh?: 8 GB', ' 5 MP, Selfie 2 MP', ' 5000 mAh, SIM: 1 SIM', 4990000, ' Phiếu mua hàng Samsung trị giá 100.000đ Cơ hội trúng xe SH 150i (áp dụng Hà Nội và một số tỉnh miền Bắc).', 100, 100, 0, '2015-07-27', 2, 'Không có Cmt', 'Không có mô tả', 'https://cdn2.tgdd.vn/Products/Images/522/70322/ipad-air-2-cellular-128gb-10-200x200.jpg\r\n'),
-(43, 'Samsung Galaxy Tab A6 7.0\"', 'SAMSUNG', ' 7\", TFT', ' Android 7.0', ' 4 nhân, Android 5.1', ' 1.5 GB, B? nh?: 8 GB', ' 5 MP, Selfie 2 MP', ' 4000 mAh, SIM: 1 SIM', 3590000, ' Phiếu mua hàng Samsung trị giá 100.000đ Cơ hội trúng xe SH 150i (áp dụng Hà Nội và một số tỉnh miền Bắc).', 100, 100, 0, '2017-04-27', 2, 'Không có Cmt', 'Không có mô tả', 'https://cdn2.tgdd.vn/Products/Images/522/102787/ipad-wifi-32gb-2017-43-200x200.jpg\r\n');
+(43, 'Samsung Galaxy Tab A6 7.0\"', 'SAMSUNG', ' 7\", TFT', ' Android 7.0', ' 4 nhân, Android 5.1', ' 1.5 GB, B? nh?: 8 GB', ' 5 MP, Selfie 2 MP', ' 4000 mAh, SIM: 1 SIM', 3590000, ' Phiếu mua hàng Samsung trị giá 100.000đ Cơ hội trúng xe SH 150i (áp dụng Hà Nội và một số tỉnh miền Bắc).', 100, 100, 0, '2017-04-27', 2, 'Không có Cmt', 'Không có mô tả', 'https://cdn2.tgdd.vn/Products/Images/522/102787/ipad-wifi-32gb-2017-43-200x200.jpg\r\n'),
+(44, 'Xiaomi Redmi 5 Plus 4GB', 'XIAOMI', '5.99\"', 'Android 7.1 (Nougat)', 'Snapdragon 625 8 nhân 64-bit', '4 GB', ' 2 camera 12 MP, Selfie: 5 MP', '4000 mAh', 4790000, 'Snapdragon 625 8 nhân 64-bit', 1000, 500, 0, '2017-06-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn.tgdd.vn/Products/Images/42/143465/xiaomi-redmi-5-plus-den-3-400x460.png'),
+(45, 'Xiaomi Redmi 4X', 'XIAOMI', '5\"', 'Android 7.0 (Nougat)', 'Snapdragon 435 8 nhân', '3 GB', ' 2 camera 12 MP, Selfie: 5 MP', '4100 mAh', 3690000, 'Nano SIM & Micro SIM (SIM 2 chung khe thẻ nhớ)', 100, 100, 0, '2017-06-27', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn.tgdd.vn/Products/Images/42/99145/xiaomi-redmi-4x-400-400x460-1-400x460.png'),
+(46, 'Xiaomi Redmi Note 5', 'XIAOMI', '5.99\"', 'Android 8.1 (Oreo)', 'Qualcomm Snapdragon 636 8 nhân', '4 GB', 'Trước 13 MP, Sau 2 MP và 5 MP (2 camera)', '4000 mAh', 5690000, 'Wi-Fi 802.11 a/b/g/n/ac, Dual-band, Wi-Fi Direct, Wi-Fi hotspot', 100, 100, 0, '2018-05-05', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn.tgdd.vn/Products/Images/42/153953/xiaomi-redmi-note-5-pro-400x460.png'),
+(47, 'OPPO F7 128GB', 'OPPO', '6.23\"', 'ColorOS 5.0 (Android 8.1)', 'MediaTek Helio P60', '6 GB', 'Trước 25 MP, Sau 16 MP', '3400 mAh', 9990000, 'Mở khóa bằng vân tay, Mở khóa bằng khuôn mặt', 100, 100, 0, '2018-05-04', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn.tgdd.vn/Products/Images/42/158464/oppo-f7-128gb-den-400x460.png'),
+(48, 'OPPO F3 Plus', 'OPPO', '6.0\"', 'Android 6.0 (Marshmallow)', 'Snapdragon 653 8 nhân 64-bit', '4 GB', 'Trước 16 MP và 8 MP, Sau 16 MP', '4000 mAh', 7490000, 'Mở khóa bằng vân tay, Mặt kính 2.5D\r\nMở ứng dụng nhanh bằng vân tay, hình vẽ', 100, 100, 0, '2018-05-01', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn.tgdd.vn/Products/Images/42/92569/oppo-f3-plus-1-1-400x460.png'),
+(49, 'OPPO F5 6GB', 'OPPO', '6.0\"', 'ColorOS 3.2 (Android 7.1)', 'Mediatek Helio P23', '6 GB', 'Trước 20 MP, Sau 16 MP', '3200 mAh', 8990000, 'Mở khóa bằng khuôn mặt, Mở khóa bằng vân tay', 100, 100, 0, '2018-05-05', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn.tgdd.vn/Products/Images/42/142106/oppo-f5-6gb-a-2-400x460.png'),
+(50, 'Huawei Nova 3e', 'HUAWEI', '5.84\"', 'Android 8.0 (Oreo)', 'HiSilicon Kirin 659 8 nhân', '4 GB', 'Trước 16 MP, Sau 16 MP và 2 MP (2 camera)', '3000 mAh', 6990000, 'Mở khóa bằng vân tay, Mở khóa bằng khuôn mặt', 100, 100, 0, '2018-05-31', 1, 'Không có Cmt', 'Không có mô tả', 'https://cdn4.tgdd.vn/Products/Images/42/154260/Slider/-nova3e.gif');
 
 -- --------------------------------------------------------
 
@@ -211,16 +220,20 @@ ALTER TABLE `ngdung`
 --
 ALTER TABLE `hoadon`
   MODIFY `idHD` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT cho bảng `may`
 --
 ALTER TABLE `may`
-  MODIFY `idM` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `idM` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+
 --
 -- AUTO_INCREMENT cho bảng `ngdung`
 --
 ALTER TABLE `ngdung`
   MODIFY `idNGDUNG` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
