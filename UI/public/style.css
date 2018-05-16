@@ -1,0 +1,9 @@
+.center-wrapper {
+  position: relative;
+  }
+
+.center-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); 
+}
