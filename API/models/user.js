@@ -25,3 +25,11 @@ exports.delete=function(value,callback){
 		callback(err,data);
 	});
 }
+
+exports.findUsername = function(value, callback){
+	console.log(value);
+	var query = "select * from ngdung where Username = ?";
+	db.executeParamsQuery(query, value, function(err,data){
+		callback(err,data);
+	});
+}

@@ -51,4 +51,8 @@ var user = require('../controllers/user.js');
     // Delete a Note with noteId
     router.delete('/user/:userId', user.delete);
 
+    // tìm kiếm 1 người dùng có username
+
+    router.get('/user/:username', user.findUsername);
+
 module.exports = router;
